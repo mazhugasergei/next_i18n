@@ -7,19 +7,19 @@ export default async function Page({ params: { lang } }: { params: { lang: strin
     <div className="min-h-screen flex flex-col items-center justify-center gap-6">
       <h1 className="text-5xl font-bold">{dict["It's working"]}</h1>
 
-      <div className="grid grid-cols-2 border rounded-full p-1">
+      <div className="grid grid-cols-2 bg-[#ffffff20] rounded-full">
         <Link
           href="/en"
-          className={`block px-2 py-1 text-sm font-bold rounded-full ${
-            lang === "en" ? "bg-foreground text-background" : ""
+          className={`px-4 py-2 flex items-center justify-center text-sm font-bold rounded-full ${
+            lang === "en" ? "bg-foreground text-background" : "pr-3"
           }`}
         >
           English
         </Link>
         <Link
           href="/ru"
-          className={`block px-2 py-1 text-sm font-bold rounded-full ${
-            lang === "ru" ? "bg-foreground text-background" : ""
+          className={`px-4 py-2 flex items-center justify-center text-sm font-bold rounded-full ${
+            lang === "ru" ? "bg-foreground text-background" : "pl-3"
           }`}
         >
           Russian
